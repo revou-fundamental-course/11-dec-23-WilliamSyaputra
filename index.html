@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body style="font-family:Verdana;color:#000000;">
+
+    <div class = "navbar">
+        <nav>
+            <img src="/img/logo.png" alt="Logo" class="logo">
+            <a href="#">Home</a>
+            <a href="#profile">Our Profile</a>
+            <a href="#Achievement">Achievement</a>
+            <a href="#messageus">Message Us</a>
+          </nav>
+    </div>
+
+    <div class="ProfileDiv" id="profile">
+        <div style="overflow:auto">
+            <div class="profile">
+              <h2 id="welcomeMessage">Hi <span id="namePlaceholder">Name</span>, Welcome to Website</h2>
+              <p>Ini adalah website latihan Pertama</p>
+            </div>    
+          </div>
+      
+          <div>
+            <div class="slideImg">
+                <img src="img/lapangan.jpg" style="width:80%">
+              </div> 
+          </div>
+    </div>
+
+    <div class="ProfileDiv">
+        <div style="overflow:auto" id="Achievement">
+            <div class="profile">
+              <h2>Our Facilitation</h2>
+            </div>    
+          </div>
+      
+          <div style="overflow:auto">
+              <div class="FacilitationList">
+                <div>
+                    <img class="circular--square" src="/img/binus.png" />
+                    <p>Masuk Binus</p>
+                </div>
+                
+                <div>
+                    <img class="circular--square" src="/img/binus.png" />
+                    <p>Masuk Binus</p>
+                </div>
+
+                <div>
+                    <img class="circular--square" src="/img/binus.png" />
+                    <p>Masuk Binus</p>
+                </div>
+              </div>  
+          </div>
+    </div>
+      
+          <div id="messageus" class="message_us">
+            <div>
+                <h2 style="margin-bottom: 50px;">Message Us</h2>
+                <label for="name">Nama :</label>
+                <input type="text" class="ipt" id="name" name="name" placeholder="Nama" required><br>
+                <label for="birthdate">Tanggal Lahir :</label>
+                <input type="date" class="ipt" id="birthdate" name="birthdate" required><br>
+                <label for="gender">Jenis Kelamin :</label>
+                <input type="radio" id="laki" name="gender" value="Laki-Laki" class="gender" required>
+                <label for="laki">Laki-Laki</label>
+                <input type="radio" id="perempuan" name="gender" value="Perempuan" class="gender" required>
+                <label for="perempuan">Perempuan</label><br>
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="message" name="message" placeholder="Pesan" required></textarea><br>
+                <div>
+                    <button id="submit" type="submit" class="btn btn-green" onclick="submit()">Submit</button>
+                </div>
+            </div>
+            <div id="result">
+                <ul class="nav-result">
+                    <li><p id="waktu" class="result"></p></li>
+                    <li><p id="nama" class="result1"></p></li>
+                    <li><p id="lahir"></p></li>
+                    <li><p id="kelamin"></p></li>
+                    <li><p id="pesan"></p></li>
+                </ul>
+            </div>
+    </div>
+    
+    
+
+    
+    
+    <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+    
+    </body>
+
+<script src="/js/script.js"></script>
+
+</html>
