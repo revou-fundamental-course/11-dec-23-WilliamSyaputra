@@ -260,7 +260,11 @@ input {
 
 /* Footer */
 
-footer {
-    padding: 20px;
+.footer {
+  width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
     text-align: right;
+    border: 1px solid black;
 }
